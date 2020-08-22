@@ -1,0 +1,25 @@
+
+
+main {
+	padding-top: 1em;
+}
+
+main > header {
+	padding: 3em 0;
+}
+
+main > header h1,
+main > header h4 {
+	color: var(--white);
+	text-shadow: 0.05em 0.05em var(--blue-dark);
+}
+
+section {
+	background: var(--white);
+	padding: 2em;
+	border-radius: var(--default-radius);
+	box-shadow: 0 0 0.25em var(--gray);
+}
+section > h2{
+	font-weight: bolder;
+}

@@ -1,0 +1,47 @@
+
+article {
+	background: var(--white-color);
+	padding: 2em 0;
+	border-bottom: 2px solid var(--gray);
+}
+
+article:last-child {
+	border-bottom: none;
+}
+
+article summary p,
+article footer strong {
+	color: var(--blue-darkest);
+}
+/* header */
+article header h5 {
+	font-weight: bolder;
+	margin: 0.725em 0;
+}
+article .badge {
+  padding: .325em .5em;
+  background: var(--blue);
+  color: var(--white);
+  font-size: medium;
+  font-weight: normal;
+  border-radius: var(--default-radius);
+  margin-right: 1em;
+}
+
+/* summary */
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+ul li {
+	margin-bottom: 1em;
+}
+ul li img {
+	margin-right: 0.5em;
+}
+/* footer */
+article footer time {
+	color: var(--blue-dark);
+	display: block;
+}
+
