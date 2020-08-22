@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bookipy-reviews/static/css/main.b9988c93.chunk.css",
-    "main.js": "/bookipy-reviews/static/js/main.a57e3bbd.chunk.js",
-    "main.js.map": "/bookipy-reviews/static/js/main.a57e3bbd.chunk.js.map",
+    "main.css": "/bookipy-reviews/static/css/main.2664b4bb.chunk.css",
+    "main.js": "/bookipy-reviews/static/js/main.2a7af338.chunk.js",
+    "main.js.map": "/bookipy-reviews/static/js/main.2a7af338.chunk.js.map",
     "runtime-main.js": "/bookipy-reviews/static/js/runtime-main.de9df2cd.js",
     "runtime-main.js.map": "/bookipy-reviews/static/js/runtime-main.de9df2cd.js.map",
     "static/js/2.4d200156.chunk.js": "/bookipy-reviews/static/js/2.4d200156.chunk.js",
     "static/js/2.4d200156.chunk.js.map": "/bookipy-reviews/static/js/2.4d200156.chunk.js.map",
     "index.html": "/bookipy-reviews/index.html",
-    "precache-manifest.05a6c39dc9c2fa45d5e658d2e726c1ec.js": "/bookipy-reviews/precache-manifest.05a6c39dc9c2fa45d5e658d2e726c1ec.js",
+    "precache-manifest.4e32e8032b5967af1111ca4ad2ccf527.js": "/bookipy-reviews/precache-manifest.4e32e8032b5967af1111ca4ad2ccf527.js",
     "service-worker.js": "/bookipy-reviews/service-worker.js",
-    "static/css/main.b9988c93.chunk.css.map": "/bookipy-reviews/static/css/main.b9988c93.chunk.css.map",
+    "static/css/main.2664b4bb.chunk.css.map": "/bookipy-reviews/static/css/main.2664b4bb.chunk.css.map",
     "static/js/2.4d200156.chunk.js.LICENSE.txt": "/bookipy-reviews/static/js/2.4d200156.chunk.js.LICENSE.txt",
     "static/media/AIRBNB.svg": "/bookipy-reviews/static/media/AIRBNB.c74888e8.svg",
     "static/media/thumb-down.svg": "/bookipy-reviews/static/media/thumb-down.7802808d.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.de9df2cd.js",
     "static/js/2.4d200156.chunk.js",
-    "static/css/main.b9988c93.chunk.css",
-    "static/js/main.a57e3bbd.chunk.js"
+    "static/css/main.2664b4bb.chunk.css",
+    "static/js/main.2a7af338.chunk.js"
   ]
 }
