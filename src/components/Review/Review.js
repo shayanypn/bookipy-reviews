@@ -8,7 +8,7 @@ const Review = () => {
   return (
     <article>
     	<header>
-			<span class="badge"><b>4.3</b>/5</span>
+			<span className="badge"><b>4.3</b>/5</span>
 			<img src={AIRBNB} alt="website name" />
 			<h5>Very nice host, and quite chill place.!</h5>
     	</header>
