@@ -1,5 +1,5 @@
 import reducer from './review'
-import { SET_REVIEW } from '../actions';
+import { SET_REVIEW, ADD_FILTER, REMOVE_FILTER } from '../actions';
 
 describe('review reducer', () => {
   it('should return the initial state', () => {
@@ -11,12 +11,40 @@ describe('review reducer', () => {
 
   it('should handle SET_REVIEW', () => {
     expect(
-      reducer([], {
+      reducer(undefined, {
         type: SET_REVIEW,
         items: [{}]
       })
     ).toEqual({
-      items: [{}]
+      items: [{}],
+      filters: []
     });
-  })
+  });
+
+  it('should handle ADD_FILTER', () => {
+    const filter = {type: 'score', value: 1};
+    expect(
+      reducer(undefined, {
+        type: ADD_FILTER,
+        filter: filter
+      })
+    ).toEqual({
+      filters: [filter],
+      items: [],
+    });
+  });
+
+  it('should handle REMOVE_FILTER', () => {
+    const filter = {type: 'score', value: 1};
+    expect(
+      reducer({
+        filters: [{type: 'score', value: 1}]
+      }, {
+        type: REMOVE_FILTER,
+        filter: filter
+      })
+    ).toEqual({
+      filters: [],
+    });
+  });
 });

@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import Review from '../../components/Review';
-import AIRBNB from '../../icons/AIRBNB.svg';
-import { fetchReviews } from '../../actions';
+import Filter from '../../components/Filter';
+import { fetchReviews, addFilter, removeFilter } from '../../actions';
 import './main.css';
 
-const App = ({ dispatch, reviews, isFiltering }) => {
+const App = ({ dispatch, reviews, filters }) => {
+
   useEffect(() => {
     dispatch(fetchReviews());
-  }, [dispatch]);
+  }, [dispatch, filters]);
 
   return (
     <div className="container">
@@ -19,17 +20,17 @@ const App = ({ dispatch, reviews, isFiltering }) => {
         </header>
         <section>
           <h2>{reviews.length} {`Review${reviews.length > 1 ? 's' : ''}`}</h2>
-          {isFiltering && (<div>
-            <strong className="mr-2">Filtered By:</strong>
-            <button type="button" className="btn btn-sm btn-light mr-1 mb-1">
-              Score: <b>4.3</b> <span className="badge badge-secondary">X</span>
-            </button>
-            <button type="button" className="btn btn-sm btn-light mr-1 mb-1">
-              <img src={AIRBNB} alt="channel icon" /> <span className="badge badge-secondary">X</span>
-            </button>
-          </div>)}
-          
-          {reviews.map((review, index) => <Review key={index} {...review} />)}
+          {(filters && filters.length) && (<Filter
+            items={filters}
+            onClick={(filter) => dispatch(removeFilter(filter))}
+          />)}
+          {reviews.map((review, index) =>
+              <Review
+                key={index}
+                {...review}
+                onClick={(type, value) => dispatch(addFilter({type, value}))}
+              />
+          )}
         </section>
         <footer className="p-2 d-flex justify-content-center">
           <nav aria-label="Page navigation example">
@@ -53,5 +54,5 @@ const App = ({ dispatch, reviews, isFiltering }) => {
 
 export default connect(state => ({
   reviews: state.review.items,
-  isFiltering: state.review.filters.length > 0
+  filters: state.review.filters,  
 }))(App);
