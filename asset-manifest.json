@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bookipy-reviews/static/css/main.4c805f30.chunk.css",
-    "main.js": "/bookipy-reviews/static/js/main.023a2b76.chunk.js",
-    "main.js.map": "/bookipy-reviews/static/js/main.023a2b76.chunk.js.map",
+    "main.css": "/bookipy-reviews/static/css/main.36d525f3.chunk.css",
+    "main.js": "/bookipy-reviews/static/js/main.2a364b12.chunk.js",
+    "main.js.map": "/bookipy-reviews/static/js/main.2a364b12.chunk.js.map",
     "runtime-main.js": "/bookipy-reviews/static/js/runtime-main.de9df2cd.js",
     "runtime-main.js.map": "/bookipy-reviews/static/js/runtime-main.de9df2cd.js.map",
-    "static/js/2.63e906bb.chunk.js": "/bookipy-reviews/static/js/2.63e906bb.chunk.js",
-    "static/js/2.63e906bb.chunk.js.map": "/bookipy-reviews/static/js/2.63e906bb.chunk.js.map",
+    "static/js/2.3d9b0eb9.chunk.js": "/bookipy-reviews/static/js/2.3d9b0eb9.chunk.js",
+    "static/js/2.3d9b0eb9.chunk.js.map": "/bookipy-reviews/static/js/2.3d9b0eb9.chunk.js.map",
     "index.html": "/bookipy-reviews/index.html",
-    "precache-manifest.5db2351ab7b8d8f0df82c4dc547ed5e1.js": "/bookipy-reviews/precache-manifest.5db2351ab7b8d8f0df82c4dc547ed5e1.js",
+    "precache-manifest.1a22b58b8c99a74783c19a610f51562f.js": "/bookipy-reviews/precache-manifest.1a22b58b8c99a74783c19a610f51562f.js",
     "service-worker.js": "/bookipy-reviews/service-worker.js",
-    "static/css/main.4c805f30.chunk.css.map": "/bookipy-reviews/static/css/main.4c805f30.chunk.css.map",
-    "static/js/2.63e906bb.chunk.js.LICENSE.txt": "/bookipy-reviews/static/js/2.63e906bb.chunk.js.LICENSE.txt",
+    "static/css/main.36d525f3.chunk.css.map": "/bookipy-reviews/static/css/main.36d525f3.chunk.css.map",
+    "static/js/2.3d9b0eb9.chunk.js.LICENSE.txt": "/bookipy-reviews/static/js/2.3d9b0eb9.chunk.js.LICENSE.txt",
     "static/media/AIRBNB.svg": "/bookipy-reviews/static/media/AIRBNB.c74888e8.svg",
     "static/media/BOOKINGCOM.svg": "/bookipy-reviews/static/media/BOOKINGCOM.315b7eac.svg",
     "static/media/HOLIDU.svg": "/bookipy-reviews/static/media/HOLIDU.5e3b3df4.svg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.de9df2cd.js",
-    "static/js/2.63e906bb.chunk.js",
-    "static/css/main.4c805f30.chunk.css",
-    "static/js/main.023a2b76.chunk.js"
+    "static/js/2.3d9b0eb9.chunk.js",
+    "static/css/main.36d525f3.chunk.css",
+    "static/js/main.2a364b12.chunk.js"
   ]
 }
