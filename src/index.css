@@ -29,7 +29,7 @@ body {
 }
 body:before {
   background-image: linear-gradient(to top, rgba(23, 55, 83, 1), rgba(23, 55, 83, 0.2)), 
-      url(/bookipy-reviews/assets/background.png);
+      url(/bookipy-reviews/assets/background.jpg);
   background-repeat: no-repeat,
     no-repeat;
   background-position: bottom,
