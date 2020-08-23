@@ -1,25 +1,27 @@
 {
   "files": {
     "main.css": "/bookipy-reviews/static/css/main.2664b4bb.chunk.css",
-    "main.js": "/bookipy-reviews/static/js/main.8d3ce962.chunk.js",
-    "main.js.map": "/bookipy-reviews/static/js/main.8d3ce962.chunk.js.map",
+    "main.js": "/bookipy-reviews/static/js/main.023a2b76.chunk.js",
+    "main.js.map": "/bookipy-reviews/static/js/main.023a2b76.chunk.js.map",
     "runtime-main.js": "/bookipy-reviews/static/js/runtime-main.de9df2cd.js",
     "runtime-main.js.map": "/bookipy-reviews/static/js/runtime-main.de9df2cd.js.map",
-    "static/js/2.c1328144.chunk.js": "/bookipy-reviews/static/js/2.c1328144.chunk.js",
-    "static/js/2.c1328144.chunk.js.map": "/bookipy-reviews/static/js/2.c1328144.chunk.js.map",
+    "static/js/2.63e906bb.chunk.js": "/bookipy-reviews/static/js/2.63e906bb.chunk.js",
+    "static/js/2.63e906bb.chunk.js.map": "/bookipy-reviews/static/js/2.63e906bb.chunk.js.map",
     "index.html": "/bookipy-reviews/index.html",
-    "precache-manifest.91212aae6cab998a4dd38ec16863a4fb.js": "/bookipy-reviews/precache-manifest.91212aae6cab998a4dd38ec16863a4fb.js",
+    "precache-manifest.6ba197bd505366af0bc4ec084e3f6e21.js": "/bookipy-reviews/precache-manifest.6ba197bd505366af0bc4ec084e3f6e21.js",
     "service-worker.js": "/bookipy-reviews/service-worker.js",
     "static/css/main.2664b4bb.chunk.css.map": "/bookipy-reviews/static/css/main.2664b4bb.chunk.css.map",
-    "static/js/2.c1328144.chunk.js.LICENSE.txt": "/bookipy-reviews/static/js/2.c1328144.chunk.js.LICENSE.txt",
+    "static/js/2.63e906bb.chunk.js.LICENSE.txt": "/bookipy-reviews/static/js/2.63e906bb.chunk.js.LICENSE.txt",
     "static/media/AIRBNB.svg": "/bookipy-reviews/static/media/AIRBNB.c74888e8.svg",
+    "static/media/BOOKINGCOM.svg": "/bookipy-reviews/static/media/BOOKINGCOM.315b7eac.svg",
+    "static/media/HOLIDU.svg": "/bookipy-reviews/static/media/HOLIDU.5e3b3df4.svg",
     "static/media/thumb-down.svg": "/bookipy-reviews/static/media/thumb-down.7802808d.svg",
     "static/media/thumb-up.svg": "/bookipy-reviews/static/media/thumb-up.962766a5.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.de9df2cd.js",
-    "static/js/2.c1328144.chunk.js",
+    "static/js/2.63e906bb.chunk.js",
     "static/css/main.2664b4bb.chunk.css",
-    "static/js/main.8d3ce962.chunk.js"
+    "static/js/main.023a2b76.chunk.js"
   ]
 }
