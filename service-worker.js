@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bookipy-reviews/precache-manifest.1a22b58b8c99a74783c19a610f51562f.js"
+  "/bookipy-reviews/precache-manifest.0468828d0a9c9f188a4ee369722bbe6c.js"
 );
 
 self.addEventListener('message', (event) => {
