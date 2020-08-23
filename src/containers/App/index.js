@@ -20,10 +20,10 @@ const App = ({ dispatch, reviews, filters }) => {
         </header>
         <section>
           <h2>{reviews.length} {`Review${reviews.length > 1 ? 's' : ''}`}</h2>
-          {(filters && filters.length) && (<Filter
+          {(filters && filters.length) ? (<Filter
             items={filters}
             onClick={(filter) => dispatch(removeFilter(filter))}
-          />)}
+          />) : null}
           {reviews.map((review, index) =>
               <Review
                 key={index}
