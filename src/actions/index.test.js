@@ -1,7 +1,8 @@
 import configureMockStore from 'redux-mock-store'
 import { mockStore } from '../testUtils'
 import fetchMock from 'fetch-mock'
-import { fetchReviews, setReviews, SET_REVIEW } from './index';
+import {
+	fetchReviews, setReviews, SET_REVIEW, addFilter, removeFilter, ADD_FILTER, REMOVE_FILTER } from './index';
 
 describe('actions', () => {
 	let store = null;
@@ -27,10 +28,10 @@ describe('actions', () => {
 	});
 
 	it('fetchReviews', () => {
-    fetchMock.sandbox().mock('/reviews', {
-      body: [{}],
-      headers: { 'content-type': 'application/json' }
-    })
+	    fetchMock.sandbox().mock('/reviews', {
+	      body: [{}],
+	      headers: { 'content-type': 'application/json' }
+	    })
 
 		const items = [{}],
 		expectedAction = [{
@@ -43,6 +44,26 @@ describe('actions', () => {
 		});
 		fetchMock.restore();
 	})
+
+	it('addFilter', () => {
+		const filter = {type: 'score', value: 1},
+		expectedAction = [{
+			type: ADD_FILTER,
+			filter: filter
+		}];
+		store.dispatch(addFilter(filter));
+		expect(store.getActions()).toEqual(expectedAction);
+	});
+
+	it('removeFilter', () => {
+		const filter = {type: 'score', value: 1},
+		expectedAction = [{
+			type: REMOVE_FILTER,
+			filter: filter
+		}];
+		store.dispatch(removeFilter(filter));
+		expect(store.getActions()).toEqual(expectedAction);
+	});
 
 });
 

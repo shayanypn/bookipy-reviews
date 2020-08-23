@@ -2,16 +2,8 @@ import React from 'react';
 import Moment from 'react-moment';
 import thumbDown from '../../icons/thumb-down.svg';
 import thumbUp from '../../icons/thumb-up.svg';
-import AIRBNB from '../../icons/AIRBNB.svg';
-import BOOKINGCOM from '../../icons/BOOKINGCOM.svg';
-import HOLIDU from '../../icons/HOLIDU.svg';
+import { iconsMap } from '../../constant';
 import './main.css';
-
-const iconMap = {
-	'AIRBNB': AIRBNB,
-	'BOOKINGCOM': BOOKINGCOM,
-	'HOLIDU': HOLIDU
-};
 
 const Review = ({
 	headline,
@@ -21,12 +13,22 @@ const Review = ({
 	positiveFeedback,
 	negativeFeedback,
 	author,
-	publishedAt
+	publishedAt,
+	onClick,
 }) => (
   <article>
     <header>
-      <span className="badge"><b>{score}</b>/5</span>
-      <img src={iconMap[channel]} alt="website name" />
+      <span 
+      	className="badge"
+      	onClick={() => onClick('score', score)}
+      >
+      	<b>{score}</b>/5
+      </span>
+      <img 
+      	src={iconsMap[channel]}
+      	alt="website name"
+      	onClick={() => onClick('channel', channel)}
+      />
       <h5>{headline}</h5>
     </header>
     <summary>

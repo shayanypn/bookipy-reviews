@@ -18,7 +18,7 @@ article header h5 {
 	font-weight: bolder;
 	margin: 0.725em 0;
 }
-article .badge {
+article header .badge {
   padding: .325em .5em;
   background: var(--blue);
   color: var(--white);
@@ -26,6 +26,10 @@ article .badge {
   font-weight: normal;
   border-radius: var(--default-radius);
   margin-right: 1em;
+  cursor: pointer;
+}
+article header img {
+  cursor: pointer;	
 }
 
 /* summary */

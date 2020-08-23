@@ -4,13 +4,14 @@ import { mount } from 'enzyme';
 import { mockStore } from '../../testUtils'
 import App from './index';
 import Review from '../../components/Review'
-
-const default_state = {
-	filters: [],
-	items: []
-};
+import Filter from '../../components/Filter'
 
 describe('App Component', () => {
+
+  const default_state = {
+  	filters: [],
+  	items: []
+  };
   const buildWrapper = (state) => {
   	const review = {
   		...default_state,
@@ -24,7 +25,7 @@ describe('App Component', () => {
       </Provider>
     );
   };
- 
+
   test('render', () => {
   	const wrapper = buildWrapper();
     expect(wrapper.exists()).toBe(true);
