@@ -29,7 +29,7 @@ const App = ({ dispatch, reviews, isFiltering }) => {
             </button>
           </div>)}
           
-          {reviews.map((review, index) => <Review key={index} item={review} />)}
+          {reviews.map((review, index) => <Review key={index} {...review} />)}
         </section>
         <footer className="p-2 d-flex justify-content-center">
           <nav aria-label="Page navigation example">
