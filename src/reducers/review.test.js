@@ -4,6 +4,9 @@ import { SET_REVIEW, ADD_FILTER, REMOVE_FILTER } from '../actions';
 describe('review reducer', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual({
+      total: 1,
+      page: 1,
+      pages: [],
       filters: [],
       items: []
     })
@@ -17,7 +20,10 @@ describe('review reducer', () => {
       })
     ).toEqual({
       items: [{}],
-      filters: []
+      filters: [],
+      total: 1,
+      page: 1,
+      pages: []
     });
   });
 
@@ -31,6 +37,9 @@ describe('review reducer', () => {
     ).toEqual({
       filters: [filter],
       items: [],
+      total: 1,
+      page: 1,
+      pages: []
     });
   });
 

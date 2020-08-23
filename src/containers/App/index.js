@@ -2,14 +2,23 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import Review from '../../components/Review';
 import Filter from '../../components/Filter';
+import Pagination from '../../components/Pagination';
 import { fetchReviews, addFilter, removeFilter } from '../../actions';
 import './main.css';
 
-const App = ({ dispatch, reviews, filters }) => {
+const App = ({ dispatch, reviews, filters, total, pages, page }) => {
+
+  const getReviews = (page) => dispatch(fetchReviews(page));
+
+  const handlePaging = (page) => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    getReviews(page);
+  }  
 
   useEffect(() => {
-    dispatch(fetchReviews());
-  }, [dispatch, filters]);
+    getReviews();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [dispatch, filters]); 
 
   return (
     <div className="container">
@@ -19,11 +28,13 @@ const App = ({ dispatch, reviews, filters }) => {
           <h1>La Casa de las Flores</h1>
         </header>
         <section>
-          <h2>{reviews.length} {`Review${reviews.length > 1 ? 's' : ''}`}</h2>
-          {(filters && filters.length) ? (<Filter
+          <h2>{total} {`Review${reviews.length > 1 ? 's' : ''}`}</h2>
+
+          <Filter
             items={filters}
             onClick={(filter) => dispatch(removeFilter(filter))}
-          />) : null}
+          />
+
           {reviews.map((review, index) =>
               <Review
                 key={index}
@@ -33,19 +44,11 @@ const App = ({ dispatch, reviews, filters }) => {
           )}
         </section>
         <footer className="p-2 d-flex justify-content-center">
-          <nav aria-label="Page navigation example">
-            <ul className="pagination justify-content-end">
-              <li className="page-item disabled">
-                <a className="page-link" href="/" tabIndex="-1" aria-disabled="true">Previous</a>
-              </li>
-              <li className="page-item"><a className="page-link" href="/">1</a></li>
-              <li className="page-item"><a className="page-link" href="/">2</a></li>
-              <li className="page-item"><a className="page-link" href="/">3</a></li>
-              <li className="page-item">
-                <a className="page-link" href="/">Next</a>
-              </li>
-            </ul>
-          </nav>
+          <Pagination
+            items={pages}
+            active={page}
+            onClick={handlePaging}
+          />
         </footer>
       </main>
     </div>
@@ -54,5 +57,8 @@ const App = ({ dispatch, reviews, filters }) => {
 
 export default connect(state => ({
   reviews: state.review.items,
-  filters: state.review.filters,  
+  filters: state.review.filters,
+  total: state.review.total,
+  pages: state.review.pages,
+  page: state.review.page
 }))(App);

@@ -9,6 +9,7 @@ import Filter from '../../components/Filter'
 describe('App Component', () => {
 
   const default_state = {
+    total: 0,
   	filters: [],
   	items: []
   };
@@ -40,6 +41,7 @@ describe('App Component', () => {
 
   test('element exist with data', () => {
   	const wrapper = buildWrapper({
+      total: 2,
   		items: [{}, {}]
   	});
     expect(wrapper.find('h2').text()).toEqual('2 Reviews');
