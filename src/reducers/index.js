@@ -35,7 +35,7 @@ function Review(state = default_state, action) {
 
       return {
         ...state,
-        total: action.totalItems,
+        total: parseInt(action.totalItems, 10),
         page: action.current,
         pages: pages
       };

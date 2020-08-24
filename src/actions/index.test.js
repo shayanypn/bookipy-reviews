@@ -129,6 +129,4 @@ describe('actions', () => {
 		store.dispatch(removeFilter(filter));
 		expect(store.getActions()).toEqual(expectedAction);
 	});
-
 });
-

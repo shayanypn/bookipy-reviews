@@ -39,7 +39,10 @@ const App = () => {
           <h1>La Casa de las Flores</h1>
         </header>
         <section>
-          <h2>{total} {`Review${reviews.length > 1 ? 's' : ''}`}</h2>
+          {/* It would be better to transfer all data below
+          to a new component so that we have more access
+          to controlling review listing */}
+          {total && <h2>{total} {`Review${total > 1 ? 's' : ''}`}</h2>}
 
           <Filter
             items={filters}

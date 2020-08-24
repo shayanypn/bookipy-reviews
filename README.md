@@ -8,11 +8,11 @@
 
 Simple UI implemented in React, Redux and Bootstrap, to show bookiply review page
 
-Features:
+Implemented Features:
  - Responsive 
  - Pagination
  - Filtering by `score` and by `channels`
- 
+ - Tests with `Jest` and `Cypress` 
 
 [Live Preview](https://shayanypn.github.io/bookipy-reviews/)
 
@@ -40,7 +40,8 @@ Features:
 
 To help guide you through the interesting pieces of this implementation note the following.
 
-
+-  Make resuable `Filter`, `Pagination` and `Review` components without having state, to be able to use them anywhere else in the application.  
+-   The code also includes a  **unit test** and **integration test**  suite to provide a safety net and allow future work to refactor confidently.
 
 ### Component Structure
 All code in this application should follow the below structure to be consistent with other parts of the application. The name of component or service ... consists of a folder/directory name and the entry point is the `index.js` file. For other additional files like tests, you should add them under this folder with a suffix name, like `index.test.js` or `index.stories.js`, and for style, we use a consistent name as `main.css`

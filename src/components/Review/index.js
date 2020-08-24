@@ -14,7 +14,7 @@ const Review = ({
 	negativeFeedback,
 	author,
 	publishedAt,
-	onClick,
+	onClick = () => null,
 }) => (
   <article>
     <header>
