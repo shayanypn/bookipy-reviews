@@ -6,12 +6,12 @@ export const REMOVE_FILTER = 'REMOVE_FILTER';
 
 export const fetchReviews = (_page = 1) => {
 	return (dispatch, getState) => {
-		const { review:{ filters } } = getState();
+		const { filters } = getState();
 		// To READ
 		// Also better to have a pattern for specifying
 		// our API URL, as latter if it get complex, we
 		// can easliy manage them
-		const query = filters.map(filter => `${filter.type}=${filter.value}`) || [];
+		const query = (filters || []).map(filter => `${filter.type}=${filter.value}`) || [];
 		query.push('_limit=5');
 		query.push(`_page=${_page}`);
 

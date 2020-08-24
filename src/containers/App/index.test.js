@@ -14,11 +14,10 @@ describe('App Component', () => {
   	items: []
   };
   const buildWrapper = (state) => {
-  	const review = {
-  		...default_state,
-  		...state
-  	};
-    let store = mockStore({ review });
+    let store = mockStore({
+      ...default_state,
+      ...state
+    });
 
     return mount(
       <Provider store={store}>

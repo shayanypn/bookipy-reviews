@@ -1,5 +1,5 @@
-import reducer from './review'
-import { SET_REVIEW, ADD_FILTER, REMOVE_FILTER } from '../actions';
+import reducer from './index';
+import { SET_REVIEW, ADD_FILTER, REMOVE_FILTER, SET_PAGES } from '../actions';
 
 describe('review reducer', () => {
   it('should return the initial state', () => {
@@ -11,6 +11,27 @@ describe('review reducer', () => {
       items: []
     })
   })
+
+  it('should handle SET_PAGES', () => {
+    expect(
+      reducer(undefined, {
+        type: SET_PAGES,
+        current: 1,
+        totalItems: '30',
+        pages: "<http://interview-task-api.bookiply.io/reviews?_limit=5&_page=1>; rel=\"first\", <http://interview-task-api.bookiply.io/reviews?_limit=5&_page=2>; rel=\"next\", <http://interview-task-api.bookiply.io/reviews?_limit=5&_page=6>; rel=\"last\""
+      })
+    ).toEqual({
+      items: [],
+      filters: [],
+      total: '30',
+      page: 1,
+      pages: [
+        {num:1, text: 'first'},
+        {num:2, text: 'next'},
+        {num:6, text: 'last'}
+      ]
+    });
+  });
 
   it('should handle SET_REVIEW', () => {
     expect(

@@ -6,7 +6,10 @@ import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 import configureStore from './store/configureStore.js';
 
-const store = configureStore({});
+const store = configureStore({
+	items: [],
+	filters: []
+});
 
 
 ReactDOM.render(

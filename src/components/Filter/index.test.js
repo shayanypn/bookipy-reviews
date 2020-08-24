@@ -54,7 +54,10 @@ describe('Filter Component', () => {
       {type: 'channel', value: 'HOLIDU'}
     ];
     const wrapper = shallow(<Filter items={mockData} onClick={onCloseMock} />);
-    wrapper.find('div > button').first().find('span').simulate('click');
+    wrapper.find('div > button').first().find('span.badge').simulate('click');
+    expect(onCloseMock).toHaveBeenCalled();
+
+    wrapper.find('div > button').last().find('span.badge').simulate('click');
     expect(onCloseMock).toHaveBeenCalled();
   });
 });

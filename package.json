@@ -20,12 +20,20 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "npm run test -- --coverage --watchAll",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/index.js",
+      "<rootDir>/src/serviceWorker.js",
+      "<rootDir>/src/store/configureStore.js"
+    ]
   },
   "browserslist": {
     "production": [

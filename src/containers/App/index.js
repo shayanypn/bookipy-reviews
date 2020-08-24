@@ -6,13 +6,13 @@ import Pagination from '../../components/Pagination';
 import { fetchReviews, addFilter, removeFilter } from '../../actions';
 import './main.css';
 
-const App = ({ dispatch, reviews, filters, total, pages, page }) => {
+const App = ({ dispatch, reviews, filters, total, pages, active_page }) => {
 
   const getReviews = (page) => dispatch(fetchReviews(page));
 
   const handlePaging = (page) => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-    getReviews(page);
+    getReviews(page.num);
   }  
 
   useEffect(() => {
@@ -46,7 +46,7 @@ const App = ({ dispatch, reviews, filters, total, pages, page }) => {
         <footer className="p-2 d-flex justify-content-center">
           <Pagination
             items={pages}
-            active={page}
+            active={active_page}
             onClick={handlePaging}
           />
         </footer>
@@ -56,9 +56,9 @@ const App = ({ dispatch, reviews, filters, total, pages, page }) => {
 }
 
 export default connect(state => ({
-  reviews: state.review.items,
-  filters: state.review.filters,
-  total: state.review.total,
-  pages: state.review.pages,
-  page: state.review.page
+  reviews: state.items,
+  filters: state.filters,
+  total: state.total,
+  pages: state.pages,
+  active_page: state.page
 }))(App);
