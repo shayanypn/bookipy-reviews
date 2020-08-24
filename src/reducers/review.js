@@ -22,7 +22,7 @@ function Review(state = default_state, action) {
             text: link[1].match('rel="(.*)"')[1]
           };
         });
-      let hasCurrent = links.find(link => link.num === action.current);
+      let hasCurrent = links.some(link => link.num === action.current);
 
       return {
         ...state,
@@ -33,12 +33,12 @@ function Review(state = default_state, action) {
             const lastPage = links[links.length - 1].num;
             hasCurrent = true;
 
-            return ary.concat([{
+            return [...ary, {
               num: action.current,
               text: `${action.current}/${lastPage}`
-            }, link]);
+            }, link];
           }
-          return ary.concat([link]);
+          return [...ary, link];
         }, [])
       };
     case REMOVE_FILTER:
