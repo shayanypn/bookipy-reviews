@@ -1,8 +1,3 @@
-
-
-
-
-
 # Bookiply Review
 [![Build Status](https://travis-ci.com/shayanypn/bookipy-reviews.svg?branch=master)](https://travis-ci.com/shayanypn/bookipy-reviews)
 
@@ -13,6 +8,7 @@ Implemented Features:
  - Pagination
  - Filtering by `score` and by `channels`
  - Tests with `Jest` and `Cypress` 
+ - CI/CD using Travis and gh-pages
 
 [Live Preview](https://shayanypn.github.io/bookipy-reviews/)
 
