@@ -16,7 +16,6 @@ const App = () => {
     active_page: state.page
   }));
 
-  // const getReviews = (page) => dispatch(fetchReviews(page));
   const getReviews = useCallback(
     (page) => dispatch(fetchReviews(page)),
     [dispatch]
