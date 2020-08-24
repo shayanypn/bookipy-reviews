@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bookipy-reviews/static/css/main.53d3f9ed.chunk.css",
-    "main.js": "/bookipy-reviews/static/js/main.5d8d8f08.chunk.js",
-    "main.js.map": "/bookipy-reviews/static/js/main.5d8d8f08.chunk.js.map",
+    "main.js": "/bookipy-reviews/static/js/main.ef7217e6.chunk.js",
+    "main.js.map": "/bookipy-reviews/static/js/main.ef7217e6.chunk.js.map",
     "runtime-main.js": "/bookipy-reviews/static/js/runtime-main.de9df2cd.js",
     "runtime-main.js.map": "/bookipy-reviews/static/js/runtime-main.de9df2cd.js.map",
     "static/js/2.2a34fb4e.chunk.js": "/bookipy-reviews/static/js/2.2a34fb4e.chunk.js",
     "static/js/2.2a34fb4e.chunk.js.map": "/bookipy-reviews/static/js/2.2a34fb4e.chunk.js.map",
     "index.html": "/bookipy-reviews/index.html",
-    "precache-manifest.3f436b506dc46f866e538a209615c9e8.js": "/bookipy-reviews/precache-manifest.3f436b506dc46f866e538a209615c9e8.js",
+    "precache-manifest.ec19352cd1a0eb059d513f0185ba06b1.js": "/bookipy-reviews/precache-manifest.ec19352cd1a0eb059d513f0185ba06b1.js",
     "service-worker.js": "/bookipy-reviews/service-worker.js",
     "static/css/main.53d3f9ed.chunk.css.map": "/bookipy-reviews/static/css/main.53d3f9ed.chunk.css.map",
     "static/js/2.2a34fb4e.chunk.js.LICENSE.txt": "/bookipy-reviews/static/js/2.2a34fb4e.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.de9df2cd.js",
     "static/js/2.2a34fb4e.chunk.js",
     "static/css/main.53d3f9ed.chunk.css",
-    "static/js/main.5d8d8f08.chunk.js"
+    "static/js/main.ef7217e6.chunk.js"
   ]
 }
