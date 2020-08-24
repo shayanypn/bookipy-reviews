@@ -46,4 +46,22 @@ describe('App Component', () => {
     expect(wrapper.find('h2').text()).toEqual('2 Reviews');
     expect(wrapper.find(Review).length).toEqual(2);
   });
+
+  test('pagination', () => {
+    const wrapper = buildWrapper({
+      total: 6,
+      items: [{}, {}, {}, {}, {}, {}],
+      page: 1,
+      pages: [
+        {num:1, text: 'first'},
+        {num:2, text: 'next'},
+        {num:6, text: 'last'}
+      ]
+    });
+    window.scrollTo = jest.fn();
+
+    expect(wrapper.find('nav ul li').length).toEqual(3);
+    wrapper.find('nav ul li').last().simulate('click');
+
+  });
 });

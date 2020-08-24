@@ -1,14 +1,26 @@
-import React, { useEffect } from 'react';
-import { connect } from 'react-redux';
+import React, { useEffect, useCallback } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Review from '../../components/Review';
 import Filter from '../../components/Filter';
 import Pagination from '../../components/Pagination';
 import { fetchReviews, addFilter, removeFilter } from '../../actions';
 import './main.css';
 
-const App = ({ dispatch, reviews, filters, total, pages, active_page }) => {
+const App = () => {
+  const dispatch = useDispatch();
+  const { reviews, filters, total, pages, active_page } = useSelector(state => ({
+    reviews: state.items,
+    filters: state.filters,
+    total: state.total,
+    pages: state.pages,
+    active_page: state.page
+  }));
 
-  const getReviews = (page) => dispatch(fetchReviews(page));
+  // const getReviews = (page) => dispatch(fetchReviews(page));
+  const getReviews = useCallback(
+    (page) => dispatch(fetchReviews(page)),
+    [dispatch]
+  )
 
   const handlePaging = (page) => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -55,10 +67,4 @@ const App = ({ dispatch, reviews, filters, total, pages, active_page }) => {
   );
 }
 
-export default connect(state => ({
-  reviews: state.items,
-  filters: state.filters,
-  total: state.total,
-  pages: state.pages,
-  active_page: state.page
-}))(App);
+export default App;

@@ -11,7 +11,6 @@ const default_state = {
 function Review(state = default_state, action) {
   switch (action.type) {
     case SET_PAGES:
-
       const links = action.pages.split(',')
         .filter(item => item)
         .map(item => {
@@ -25,12 +24,10 @@ function Review(state = default_state, action) {
       let hasCurrent = links.some(link => link.num === action.current);
       const pages = links.reduce((ary, link) => {
         if (!hasCurrent && link.num > action.current) {
-          const lastPage = links[links.length - 1].num;
           hasCurrent = true;
-
           return [...ary, {
             num: action.current,
-            text: `${action.current}/${lastPage}`
+            text: `${action.current}/${links[links.length - 1].num}`
           }, link];
         }
         return [...ary, link];
@@ -51,7 +48,7 @@ function Review(state = default_state, action) {
         ))
       };
     case ADD_FILTER:
-      const filterExists = state.filters.find(filter => (
+      const filterExists = state.filters.some(filter => (
         filter.type === action.filter.type
         && filter.value === action.filter.value
       ));
