@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/bookipy-reviews/static/css/main.53d3f9ed.chunk.css",
-    "main.js": "/bookipy-reviews/static/js/main.d110d177.chunk.js",
-    "main.js.map": "/bookipy-reviews/static/js/main.d110d177.chunk.js.map",
+    "main.js": "/bookipy-reviews/static/js/main.1cf8312c.chunk.js",
+    "main.js.map": "/bookipy-reviews/static/js/main.1cf8312c.chunk.js.map",
     "runtime-main.js": "/bookipy-reviews/static/js/runtime-main.de9df2cd.js",
     "runtime-main.js.map": "/bookipy-reviews/static/js/runtime-main.de9df2cd.js.map",
-    "static/js/2.558152b7.chunk.js": "/bookipy-reviews/static/js/2.558152b7.chunk.js",
-    "static/js/2.558152b7.chunk.js.map": "/bookipy-reviews/static/js/2.558152b7.chunk.js.map",
+    "static/js/2.9d0298fd.chunk.js": "/bookipy-reviews/static/js/2.9d0298fd.chunk.js",
+    "static/js/2.9d0298fd.chunk.js.map": "/bookipy-reviews/static/js/2.9d0298fd.chunk.js.map",
     "index.html": "/bookipy-reviews/index.html",
-    "precache-manifest.cbd89446e6fb68c6c941dd4466101cea.js": "/bookipy-reviews/precache-manifest.cbd89446e6fb68c6c941dd4466101cea.js",
+    "precache-manifest.b07ff876b057ffafd09f841d67e9d587.js": "/bookipy-reviews/precache-manifest.b07ff876b057ffafd09f841d67e9d587.js",
     "service-worker.js": "/bookipy-reviews/service-worker.js",
     "static/css/main.53d3f9ed.chunk.css.map": "/bookipy-reviews/static/css/main.53d3f9ed.chunk.css.map",
-    "static/js/2.558152b7.chunk.js.LICENSE.txt": "/bookipy-reviews/static/js/2.558152b7.chunk.js.LICENSE.txt",
+    "static/js/2.9d0298fd.chunk.js.LICENSE.txt": "/bookipy-reviews/static/js/2.9d0298fd.chunk.js.LICENSE.txt",
     "static/media/AIRBNB.svg": "/bookipy-reviews/static/media/AIRBNB.c74888e8.svg",
     "static/media/BOOKINGCOM.svg": "/bookipy-reviews/static/media/BOOKINGCOM.315b7eac.svg",
     "static/media/HOLIDU.svg": "/bookipy-reviews/static/media/HOLIDU.5e3b3df4.svg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.de9df2cd.js",
-    "static/js/2.558152b7.chunk.js",
+    "static/js/2.9d0298fd.chunk.js",
     "static/css/main.53d3f9ed.chunk.css",
-    "static/js/main.d110d177.chunk.js"
+    "static/js/main.1cf8312c.chunk.js"
   ]
 }
