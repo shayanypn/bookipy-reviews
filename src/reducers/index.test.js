@@ -23,7 +23,7 @@ describe('review reducer', () => {
     ).toEqual({
       items: [],
       filters: [],
-      total: '30',
+      total: 30,
       page: 1,
       pages: [
         {num:1, text: 'first'},

@@ -35,7 +35,6 @@ describe('App Component', () => {
   	const wrapper = buildWrapper();
     expect(wrapper.find('h4').text()).toEqual('ID: 091021');
     expect(wrapper.find('h1').text()).toEqual('La Casa de las Flores');
-    expect(wrapper.find('h2').text()).toEqual('0 Review');
   });
 
   test('element exist with data', () => {
