@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3bb5c86c605e0b766b6fe54db9d3cd29",
+    "revision": "a646eb693836ada4f67b7b9a5a9dc7e2",
     "url": "/bookipy-reviews/index.html"
   },
   {
-    "revision": "324dea1e10ad8b4ced32",
-    "url": "/bookipy-reviews/static/css/main.53d3f9ed.chunk.css"
+    "revision": "1335b1f108de19135a4d",
+    "url": "/bookipy-reviews/static/css/main.fc4044e7.chunk.css"
   },
   {
     "revision": "f27266cc37d6a8435241",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bookipy-reviews/static/js/2.2a34fb4e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "324dea1e10ad8b4ced32",
-    "url": "/bookipy-reviews/static/js/main.ef7217e6.chunk.js"
+    "revision": "1335b1f108de19135a4d",
+    "url": "/bookipy-reviews/static/js/main.83a9242f.chunk.js"
   },
   {
     "revision": "7ab6f2cfc1797bfeb16f",
