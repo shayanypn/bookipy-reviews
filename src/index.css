@@ -4,11 +4,13 @@
   --white: #fff;
   --gray-light: #f6f8f9;
   --gray: #e1e4e7;
-  --blue: #0276db;
+  --blue: #0276DB;
   --blue-dark: #5b7186;
   --blue-darkest: #173753;
   /* element props */
-  --default-radius: .325rem;
+  --default-radius: .5em;
+  --text-shadow: rgba(23,55,83,0.15);
+  --box-shadow: rgba(23,55,83,0.1);
 }
 
 
@@ -16,6 +18,9 @@ h1, h2, h3 ,h4 ,h5 {
   color: var(--blue-darkest);
 }
 
+h1 {
+  line-height: 1.375em;
+}
 
 body {
   margin: 0;

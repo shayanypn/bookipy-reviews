@@ -16,10 +16,10 @@ article footer strong {
 /* header */
 article header h5 {
 	font-weight: bolder;
-	margin: 0.725em 0;
+	margin: 1em 0;
 }
 article header .badge {
-  padding: .325em .5em;
+  padding: .375em .625em;
   background: var(--blue);
   color: var(--white);
   font-size: medium;
@@ -29,18 +29,22 @@ article header .badge {
   cursor: pointer;
 }
 article header img {
-  cursor: pointer;	
+  cursor: pointer;
 }
 
 /* summary */
-ul {
+article summary {
+	margin: 0 0 0.875em 0;
+}
+article summary ul {
 	list-style: none;
 	padding-left: 0;
 }
-ul li {
+article summary ul li {
 	margin-bottom: 1em;
+	font-weight: normal;
 }
-ul li img {
+article summary ul li img {
 	margin-right: 0.5em;
 }
 /* footer */

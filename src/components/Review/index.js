@@ -22,7 +22,7 @@ const Review = ({
       	className="badge"
       	onClick={() => onClick('score', score)}
       >
-      	<b>{score}</b>/5
+      	<b>{score}</b> / 5
       </span>
       <img 
       	src={iconsMap[channel]}
